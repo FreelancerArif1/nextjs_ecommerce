@@ -784,17 +784,6 @@ useEffect(() =>{
 }
 
 
-export async function getServerSideProps(context) {
-    // Fetch data from an API
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1/site-info');
-    const data = await res.json();
-    console.log('kkkkkkkkk='+data);
-    return {
-      props: {
-        data, // Pass data to the page component as props
-      },
-    };
-  }
 
 
 
