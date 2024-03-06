@@ -52,7 +52,7 @@ class LoginController extends Controller
 			echo json_encode('Sorry please provide valid api url!');
 		} elseif ($request->server('HTTP_HOST') == 'seller.dhroobo.com' || $request->server('HTTP_HOST') == '127.0.0.1:8001' || $request->server('HTTP_HOST') == 'seller.dhroobo.com') {
 			return view('auth.admin.login');
-		} elseif ($request->server('HTTP_HOST') == 'admin.dhroobo.com' || $request->server('HTTP_HOST') == '127.0.0.1:8000' || $request->server('HTTP_HOST') == 'admin.dhroobo.com') {
+		} elseif ($request->server('HTTP_HOST') == 'dhroobo-admin.dhakaitsolutions.com' || $request->server('HTTP_HOST') == '127.0.0.1:8000' || $request->server('HTTP_HOST') == 'dhroobo-admin.dhakaitsolutions.com') {
 			return view('auth.admin.login');
 		} else {
 			echo json_encode('Sorry you are not allowed to access this url!');
@@ -109,7 +109,7 @@ class LoginController extends Controller
 				session()->flash('failed', 'Invalid Credentials!');
 				return back();
 			}
-		} elseif ($request->server('HTTP_HOST') == 'admin.dhroobo.com' || $request->server('HTTP_HOST') == 'admin.dhroobo.com' || $request->server('HTTP_HOST') == '127.0.0.1:8000') {
+		} elseif ($request->server('HTTP_HOST') == 'dhroobo-admin.dhakaitsolutions.com' || $request->server('HTTP_HOST') == 'dhroobo-admin.dhakaitsolutions.com' || $request->server('HTTP_HOST') == '127.0.0.1:8000') {
 			$this->validate($request, [
 				'email' => 'required',
 				'password' => 'required'
