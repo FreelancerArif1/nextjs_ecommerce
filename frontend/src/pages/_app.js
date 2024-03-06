@@ -6,7 +6,9 @@ import axios from 'axios';
 
 
 const corsOptions ={
+  //origin:'http://localhost:3000', 
   origin:'https://dhroobo-frontend.dhakaitsolutions.com',
+
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
