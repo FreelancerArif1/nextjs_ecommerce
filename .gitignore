@@ -38,3 +38,4 @@ frontend/.next/*
 frontend/public/assets/images/veg-1
 frontend/public/assets/images/veg-2/*
 frontend/public/assets/images/veg-3
+*.zip
