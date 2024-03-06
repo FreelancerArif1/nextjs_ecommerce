@@ -1,0 +1,40 @@
+/vendor/
+node_modules/
+frontend/node_modules/
+.next/cache/
+frontend/.next/cache/
+cache/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+frontend/.env*.local
+frontend/.env.local
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+.htaccess
+frontend/node_modules
+frontend/.next/cache
+admin/public
+admin/vendor
+admin/packages
+frontend/.next
+frontend/.next/*
+frontend/public/assets/images/veg-1
+frontend/public/assets/images/veg-2/*
+frontend/public/assets/images/veg-3
