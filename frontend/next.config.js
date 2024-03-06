@@ -6,6 +6,7 @@
       //domains: ['127.0.0.1'],
       domains: ['https://dhroobo-frontend.dhakaitsolutions.com'],
     },
+    useFileSystemPublicRoutes: false,
     reactStrictMode: true,
     // async rewrites() {
     //   return [
