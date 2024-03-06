@@ -18,7 +18,7 @@
     },
     "license": "MIT",
     "require": {
-        "php": "^8.0.30",
+        "php": "^8.2.12",
         "concaveit/media": "@dev",
         "fruitcake/laravel-cors": "dev-develop",
         "guzzlehttp/guzzle": "^7.2",
